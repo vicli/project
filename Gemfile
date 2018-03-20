@@ -20,6 +20,7 @@ group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.7'
+  gem 'annotate'
 end
 
 group :test do
