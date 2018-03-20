@@ -17,6 +17,13 @@ gem 'jbuilder',     '2.7.0'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'shoulda-matchers', require: false
+  gem 'json-schema-rspec', git: 'https://github.com/sharethrough/json-schema-rspec'
+  gem 'stripe-ruby-mock', git: 'https://github.com/rebelidealist/stripe-ruby-mock', require: 'stripe_mock'
 end
 
 group :development do

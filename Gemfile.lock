@@ -1,3 +1,20 @@
+GIT
+  remote: https://github.com/rebelidealist/stripe-ruby-mock
+  revision: 1fc4ffd5752b2a9092efe9fa0d742cc22ffab789
+  specs:
+    stripe-ruby-mock (2.5.3)
+      dante (>= 0.2.0)
+      multi_json (~> 1.0)
+      stripe (>= 2.0.3)
+
+GIT
+  remote: https://github.com/sharethrough/json-schema-rspec
+  revision: bac0066b58f5b8313f10777a805e061beacaeaf6
+  specs:
+    json-schema-rspec (0.0.4)
+      json-schema (~> 2.5)
+      rspec
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,6 +55,8 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
@@ -51,8 +70,17 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    dante (0.2.0)
+    diff-lcs (1.3)
     erubi (1.7.1)
     execjs (2.7.0)
+    factory_girl (4.9.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.9.0)
+      factory_girl (~> 4.9.0)
+      railties (>= 3.0.0)
+    faraday (0.14.0)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -66,6 +94,8 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.6)
+    json-schema (2.8.0)
+      addressable (>= 2.4)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -80,10 +110,12 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
+    public_suffix (3.0.2)
     puma (3.9.1)
     rack (2.0.4)
     rack-test (0.8.3)
@@ -116,6 +148,19 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rdoc (4.3.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
     ruby_dep (1.5.0)
     sass (3.5.5)
       sass-listen (~> 4.0.0)
@@ -131,6 +176,8 @@ GEM
     sdoc (0.4.2)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    shoulda-matchers (3.1.2)
+      activesupport (>= 4.0.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -143,6 +190,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    stripe (3.11.0)
+      faraday (~> 0.10)
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -168,16 +217,20 @@ PLATFORMS
 DEPENDENCIES
   byebug (= 9.0.6)
   coffee-rails (= 4.2.2)
+  factory_girl_rails
   jbuilder (= 2.7.0)
   jquery-rails (= 4.3.1)
+  json-schema-rspec!
   listen (= 3.1.5)
   pg (~> 0.20)
   puma (= 3.9.1)
   rails (= 5.1.4)
   sass-rails (= 5.0.6)
   sdoc (~> 0.4.0)
+  shoulda-matchers
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
+  stripe-ruby-mock!
   turbolinks (= 5.0.1)
   uglifier (= 3.2.0)
   web-console (= 3.5.1)
