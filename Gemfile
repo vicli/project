@@ -15,10 +15,12 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem "rspec"
+gem 'bcrypt',         '3.1.11'
+gem "faker"
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
-  gem 'factory_bot_rails'
+  gem "factory_bot_rails", "~> 4.0"
   gem 'rspec-rails', '~> 3.7'
   gem 'annotate'
 end
