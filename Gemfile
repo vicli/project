@@ -14,10 +14,12 @@ gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
+gem "rspec"
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :test do
