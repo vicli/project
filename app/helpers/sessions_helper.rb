@@ -16,7 +16,15 @@ module SessionsHelper
 
   # Returns true if the user is logged in, false otherwise.
   def logged_in?
-    p "logged in", current_user.present?
     current_user.present?
+  end
+
+  def authenticate_user!
+    user = User.find(params[:id])
+
+    unless logged_in? && user == current_user
+      flash[:danger] = "Please log in."
+      redirect_to login_url
+    end
   end
 end

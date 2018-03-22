@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails',        '5.1.4'
 gem 'bootstrap-sass', '3.3.7'
-# Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.20'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma',         '3.9.1'
@@ -36,10 +34,6 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
-end
-
-group :production do
-  gem 'pg', '~> 0.20'
 end
 
 # Use ActiveModel has_secure_password
