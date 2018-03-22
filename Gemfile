@@ -15,6 +15,7 @@ gem 'jbuilder',     '2.7.0'
 gem "rspec"
 gem 'bcrypt',         '3.1.11'
 gem "faker"
+gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
